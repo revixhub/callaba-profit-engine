@@ -51,22 +51,21 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-black/80 backdrop-blur-xl border-b border-gray-800 z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-medium text-white">scale</div>
+            <div className="text-2xl font-medium text-white">Callaba</div>
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <button onClick={() => scrollToSection("hero")} className="text-gray-300 hover:text-white transition-colors text-sm">Главная</button>
-              <button onClick={() => scrollToSection("cases")} className="text-gray-300 hover:text-white transition-colors text-sm">Кейсы</button>
-              <button onClick={() => scrollToSection("pricing")} className="text-gray-300 hover:text-white transition-colors text-sm">Тарифы</button>
-              <button onClick={() => scrollToSection("faq")} className="text-gray-300 hover:text-white transition-colors text-sm">FAQ</button>
-              <button onClick={() => scrollToSection("audit")} className="text-gray-300 hover:text-white transition-colors text-sm">Аудит</button>
+              <button onClick={() => scrollToSection("hero")} className="text-gray-300 hover:text-white transition-colors text-base">Главная</button>
+              <button onClick={() => scrollToSection("cases")} className="text-gray-300 hover:text-white transition-colors text-base">Кейсы</button>
+              <button onClick={() => scrollToSection("pricing")} className="text-gray-300 hover:text-white transition-colors text-base">Тарифы</button>
+              <button onClick={() => scrollToSection("faq")} className="text-gray-300 hover:text-white transition-colors text-base">FAQ</button>
+              <button onClick={() => scrollToSection("audit")} className="text-gray-300 hover:text-white transition-colors text-base">Аудит</button>
             </nav>
             
             <div className="flex items-center space-x-4">
-              <Button onClick={() => scrollToSection("audit")} className="hidden lg:inline-flex bg-white hover:bg-gray-100 text-black px-4 py-2 text-sm font-medium rounded-md">
-                Book a Demo →
+              <Button onClick={() => scrollToSection("audit")} className="hidden lg:inline-flex bg-white hover:bg-gray-100 text-black px-6 py-3 text-base font-medium rounded-lg">
+                Получить аудит
               </Button>
-              <button className="hidden lg:inline-flex text-gray-300 hover:text-white text-sm">Log In</button>
               
               {/* Mobile menu button */}
               <button
@@ -82,13 +81,13 @@ const Index = () => {
           {isMenuOpen && (
             <div className="lg:hidden border-t border-gray-800 py-4">
               <nav className="flex flex-col space-y-4">
-                <button onClick={() => scrollToSection("hero")} className="text-gray-300 hover:text-white transition-colors text-left">Главная</button>
-                <button onClick={() => scrollToSection("cases")} className="text-gray-300 hover:text-white transition-colors text-left">Кейсы</button>
-                <button onClick={() => scrollToSection("pricing")} className="text-gray-300 hover:text-white transition-colors text-left">Тарифы</button>
-                <button onClick={() => scrollToSection("faq")} className="text-gray-300 hover:text-white transition-colors text-left">FAQ</button>
-                <button onClick={() => scrollToSection("audit")} className="text-gray-300 hover:text-white transition-colors text-left">Аудит</button>
-                <Button onClick={() => scrollToSection("audit")} className="bg-white hover:bg-gray-100 text-black w-full mt-4 rounded-md">
-                  Book a Demo →
+                <button onClick={() => scrollToSection("hero")} className="text-gray-300 hover:text-white transition-colors text-left text-base">Главная</button>
+                <button onClick={() => scrollToSection("cases")} className="text-gray-300 hover:text-white transition-colors text-left text-base">Кейсы</button>
+                <button onClick={() => scrollToSection("pricing")} className="text-gray-300 hover:text-white transition-colors text-left text-base">Тарифы</button>
+                <button onClick={() => scrollToSection("faq")} className="text-gray-300 hover:text-white transition-colors text-left text-base">FAQ</button>
+                <button onClick={() => scrollToSection("audit")} className="text-gray-300 hover:text-white transition-colors text-left text-base">Аудит</button>
+                <Button onClick={() => scrollToSection("audit")} className="bg-white hover:bg-gray-100 text-black w-full mt-4 rounded-lg py-3">
+                  Получить аудит
                 </Button>
               </nav>
             </div>
@@ -106,115 +105,46 @@ const Index = () => {
         
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 relative">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 leading-tight">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-light text-white mb-8 leading-tight">
               Увеличиваем прибыль<br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 на маркетплейсах
               </span><br />
               в 3-10 раз
             </h1>
-            <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-2xl text-gray-300 mb-16 leading-relaxed max-w-5xl mx-auto">
               Мы не агентство. Мы — ваш внешний отдел по повышению продаж на WB и Ozon. 
               Системный подход, автоматизация и ответственность за результат.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <Button onClick={() => scrollToSection("audit")} className="bg-white hover:bg-gray-100 text-black px-8 py-3 text-base font-medium rounded-md">
-                Book a Demo →
-              </Button>
-              <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-8 py-3 text-base font-medium rounded-md">
-                Build AI →
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
+              <Button onClick={() => scrollToSection("audit")} className="bg-white hover:bg-gray-100 text-black px-10 py-4 text-lg font-medium rounded-lg">
+                Получить аудит бесплатно
               </Button>
             </div>
 
-            {/* Logo strip */}
-            <div className="border-t border-gray-800 pt-12">
-              <p className="text-gray-400 text-sm mb-8 uppercase tracking-wider">Scale works with Generative AI Companies, U.S. Government Agencies & Enterprises</p>
-              <div className="flex justify-center items-center space-x-12 opacity-60">
-                {/* Placeholder for client logos */}
-                <div className="w-16 h-8 bg-gray-700 rounded"></div>
-                <div className="w-16 h-8 bg-gray-700 rounded"></div>
-                <div className="w-16 h-8 bg-gray-700 rounded"></div>
-                <div className="w-16 h-8 bg-gray-700 rounded"></div>
+            {/* Graphics slot */}
+            <div className="border-t border-gray-800 pt-16">
+              <div className="bg-gray-900 rounded-2xl p-16 border border-gray-800">
+                <div className="text-center text-gray-500">
+                  <TrendingUp className="h-20 w-20 mx-auto mb-6 text-gray-600" />
+                  <p className="text-lg font-medium text-gray-400">Место для анимации/видео успеха</p>
+                  <p className="text-base text-gray-500 mt-2">График роста, карточка до/после</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Research Section */}
-      <section className="py-32 bg-black">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">Frontier AI Research</h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-              SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research.
-            </p>
-            <Button className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-md border border-gray-700">
-              Learn More →
-            </Button>
-          </div>
-
-          {/* Cards Grid */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                category: "Leaderboards",
-                title: "SEAL Leaderboards: Expert-Driven Private Evaluations",
-                icon: "🎯"
-              },
-              {
-                category: "Research", 
-                title: "LLMs Easily Jailbroken as Browser Agents",
-                icon: "❌"
-              },
-              {
-                category: "Research",
-                title: "Multi-Turn Human Jailbreaks on LLM Defenses", 
-                icon: "🔒"
-              }
-            ].map((item, index) => (
-              <Card key={index} className="bg-gray-900 border-gray-800 hover:bg-gray-800 transition-colors">
-                <CardContent className="p-8">
-                  <div className="text-3xl mb-6">{item.icon}</div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider mb-3">{item.category}</div>
-                  <h3 className="text-white text-xl font-medium leading-tight">{item.title}</h3>
-                  <div className="mt-6">
-                    <button className="text-gray-400 hover:text-white">
-                      <ArrowUp className="h-4 w-4 rotate-45" />
-                    </button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* AI for Enterprise Section */}
-      <section className="py-32 bg-black">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <div className="text-gray-400 text-sm uppercase tracking-wider mb-6">AI FOR THE ENTERPRISE</div>
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-8">Generative AI Architecture</h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-              Whether you're building your own models or applying foundation models to your business, data remains the biggest bottleneck to AI.
-            </p>
-            <Button className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-md border border-gray-700">
-              Book a Demo →
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Pain Points */}
-      <section className="py-24 bg-gray-950">
+      <section className="py-32 bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-white mb-4">Вам это знакомо?</h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">Проблемы, с которыми сталкиваются владельцы бизнеса на маркетплейсах</p>
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-light text-white mb-6">Вам это знакомо?</h2>
+            <p className="text-2xl text-gray-400 max-w-4xl mx-auto">Проблемы, с которыми сталкиваются владельцы бизнеса на маркетплейсах</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { icon: DollarSign, text: "Реклама сжирает всю маржу", color: "text-red-400" },
               { icon: TrendingUp, text: "Возвраты растут, а прибыль — нет", color: "text-orange-400" },
@@ -223,11 +153,11 @@ const Index = () => {
               { icon: Clock, text: "Ручная аналитика мешает росту", color: "text-purple-400" }
             ].map((item, index) => (
               <Card key={index} className="bg-gray-900 border-gray-800 hover:bg-gray-800 transition-colors">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <item.icon className={`h-8 w-8 ${item.color} mx-auto`} />
+                <CardContent className="p-10 text-center">
+                  <div className="mb-8">
+                    <item.icon className={`h-12 w-12 ${item.color} mx-auto`} />
                   </div>
-                  <p className="text-white font-medium text-lg leading-relaxed">{item.text}</p>
+                  <p className="text-white font-medium text-xl leading-relaxed">{item.text}</p>
                 </CardContent>
               </Card>
             ))}
@@ -238,16 +168,16 @@ const Index = () => {
       {/* What We Do */}
       <section className="py-32 bg-black">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-8 max-w-5xl mx-auto leading-tight">
+          <div className="text-center mb-24">
+            <h2 className="text-5xl md:text-6xl font-light text-white mb-10 max-w-6xl mx-auto leading-tight">
               Мы не агентство.<br />
               Мы — ваш внешний отдел по повышению продаж на маркетплейсах
             </h2>
-            <p className="text-xl text-gray-400 mb-8">
+            <p className="text-2xl text-gray-400 mb-12">
               (WB, Ozon)
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
               { icon: Target, title: "Стратегия 6–12 месяцев", description: "Долгосрочное планирование роста с четкими KPI" },
               { icon: Zap, title: "Автоматизация до 80% рутины", description: "Освобождаем время для стратегических решений" },
@@ -256,12 +186,12 @@ const Index = () => {
               { icon: CheckCircle, title: "Ответственность — за результат", description: "Гарантируем достижение целевых показателей" }
             ].map((item, index) => (
               <Card key={index} className="bg-gray-900 border-gray-800 hover:bg-gray-800 transition-colors">
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <item.icon className="h-6 w-6 text-blue-400" />
+                <CardContent className="p-10">
+                  <div className="mb-8">
+                    <item.icon className="h-8 w-8 text-blue-400" />
                   </div>
-                  <h3 className="text-xl font-medium text-white mb-4 leading-tight">{item.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{item.description}</p>
+                  <h3 className="text-2xl font-medium text-white mb-6 leading-tight">{item.title}</h3>
+                  <p className="text-gray-400 leading-relaxed text-lg">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -272,23 +202,23 @@ const Index = () => {
       {/* Cases */}
       <section id="cases" className="py-32 bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+          <div className="text-center mb-24">
+            <h2 className="text-5xl md:text-6xl font-light text-white mb-8">
               Рост прибыли через системный подход
             </h2>
-            <p className="text-xl text-gray-400">Реальные результаты наших клиентов</p>
+            <p className="text-2xl text-gray-400">Реальные результаты наших клиентов</p>
           </div>
           
           {/* Graphics Slots */}
-          <div className="mb-16">
-            <div className="bg-gray-900 rounded-xl p-12 border border-gray-800">
-              <div className="grid md:grid-cols-3 gap-8">
+          <div className="mb-20">
+            <div className="bg-gray-900 rounded-2xl p-16 border border-gray-800">
+              <div className="grid md:grid-cols-3 gap-10">
                 {[1, 2, 3].map((i) => (
-                  <div key={i} className="bg-gray-800 rounded-lg h-64 flex items-center justify-center border border-gray-700">
+                  <div key={i} className="bg-gray-800 rounded-xl h-80 flex items-center justify-center border border-gray-700">
                     <div className="text-center text-gray-500">
-                      <Target className="h-12 w-12 mx-auto mb-3 text-gray-600" />
-                      <p className="text-sm font-medium text-gray-400">Скриншот кейса {i}</p>
-                      <p className="text-xs text-gray-500 mt-1">До/После</p>
+                      <Target className="h-16 w-16 mx-auto mb-4 text-gray-600" />
+                      <p className="text-lg font-medium text-gray-400">Фото карточки до/после</p>
+                      <p className="text-base text-gray-500 mt-2">Кейс {i}</p>
                     </div>
                   </div>
                 ))}
@@ -296,7 +226,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {[
               {
                 category: "БАДы (Ozon)",
@@ -321,24 +251,24 @@ const Index = () => {
               }
             ].map((item, index) => (
               <Card key={index} className="bg-gray-900 border-gray-800 hover:bg-gray-800 transition-colors">
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-sm font-medium rounded-full">
+                <CardContent className="p-10">
+                  <div className="mb-8">
+                    <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-400 text-lg font-medium rounded-full">
                       {item.growth}
                     </span>
                   </div>
-                  <h3 className="text-xl font-medium text-white mb-8">{item.category}</h3>
-                  <div className="space-y-4">
+                  <h3 className="text-2xl font-medium text-white mb-10">{item.category}</h3>
+                  <div className="space-y-6">
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-400 font-medium">Было:</span>
-                      <span className="text-gray-300 font-semibold">{item.before}</span>
+                      <span className="text-gray-400 font-medium text-lg">Было:</span>
+                      <span className="text-gray-300 font-semibold text-lg">{item.before}</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-400 font-medium">Стало:</span>
-                      <span className="text-green-400 font-bold text-xl">{item.after}</span>
+                      <span className="text-gray-400 font-medium text-lg">Стало:</span>
+                      <span className="text-green-400 font-bold text-2xl">{item.after}</span>
                     </div>
-                    <Separator className="my-4 bg-gray-700" />
-                    <p className="text-blue-400 font-medium text-center bg-blue-500/10 py-3 px-4 rounded-lg border border-blue-500/20">{item.metric}</p>
+                    <Separator className="my-6 bg-gray-700" />
+                    <p className="text-blue-400 font-medium text-center bg-blue-500/10 py-4 px-6 rounded-xl border border-blue-500/20 text-lg">{item.metric}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -350,13 +280,13 @@ const Index = () => {
       {/* Pricing */}
       <section id="pricing" className="py-32 bg-black">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+          <div className="text-center mb-24">
+            <h2 className="text-5xl md:text-6xl font-light text-white mb-8">
               Под ваш уровень зрелости
             </h2>
-            <p className="text-xl text-gray-400">Выберите тариф, который подходит вашему бизнесу</p>
+            <p className="text-2xl text-gray-400">Выберите тариф, который подходит вашему бизнесу</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {[
               {
                 name: "БАЗА",
@@ -377,35 +307,35 @@ const Index = () => {
               }
             ].map((plan, index) => (
               <Card key={index} className={`relative ${plan.recommended ? 'bg-gray-800 border-blue-500' : 'bg-gray-900 border-gray-800'} hover:bg-gray-800 transition-colors`}>
-                <CardContent className="p-10">
+                <CardContent className="p-12">
                   {plan.recommended && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-blue-600 text-white text-sm font-medium px-4 py-1 rounded-full">
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-blue-600 text-white text-base font-medium px-6 py-2 rounded-full">
                         Популярный
                       </span>
                     </div>
                   )}
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl font-medium text-white mb-2">{plan.name}</h3>
-                    <p className="text-4xl font-light text-white mb-1">{plan.price}</p>
-                    <p className="text-gray-400">в месяц</p>
+                  <div className="text-center mb-10">
+                    <h3 className="text-3xl font-medium text-white mb-4">{plan.name}</h3>
+                    <p className="text-5xl font-light text-white mb-2">{plan.price}</p>
+                    <p className="text-gray-400 text-lg">в месяц</p>
                   </div>
-                  <ul className="space-y-4 mb-8">
+                  <ul className="space-y-5 mb-10">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-300 leading-relaxed">{feature}</span>
+                        <CheckCircle className="h-6 w-6 text-green-400 mr-4 mt-1 flex-shrink-0" />
+                        <span className="text-gray-300 leading-relaxed text-lg">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button className={`w-full py-3 rounded-md ${plan.recommended ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-gray-800 hover:bg-gray-700 text-white border border-gray-700'} font-medium`}>
+                  <Button className={`w-full py-4 rounded-lg text-lg ${plan.recommended ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-gray-800 hover:bg-gray-700 text-white border border-gray-700'} font-medium`}>
                     Выбрать план
                   </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
-          <p className="text-center text-gray-400 mt-16 text-lg font-light italic">
+          <p className="text-center text-gray-400 mt-20 text-2xl font-light italic">
             Команда сильнее одного e-com менеджера.
           </p>
         </div>
@@ -413,14 +343,14 @@ const Index = () => {
 
       {/* FAQ */}
       <section id="faq" className="py-32 bg-gray-950">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-24">
+            <h2 className="text-5xl md:text-6xl font-light text-white mb-8">
               Часто спрашивают
             </h2>
-            <p className="text-xl text-gray-400">Ответы на самые популярные вопросы</p>
+            <p className="text-2xl text-gray-400">Ответы на самые популярные вопросы</p>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-8">
             {[
               {
                 question: "А где гарантии?",
@@ -436,9 +366,9 @@ const Index = () => {
               }
             ].map((item, index) => (
               <Card key={index} className="bg-gray-900 border-gray-800 hover:bg-gray-800 transition-colors">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-medium text-white mb-4">{item.question}</h3>
-                  <p className="text-gray-300 leading-relaxed text-lg font-light">{item.answer}</p>
+                <CardContent className="p-10">
+                  <h3 className="text-2xl font-medium text-white mb-6">{item.question}</h3>
+                  <p className="text-gray-300 leading-relaxed text-xl font-light">{item.answer}</p>
                 </CardContent>
               </Card>
             ))}
@@ -448,42 +378,42 @@ const Index = () => {
 
       {/* CTA / Lead Form */}
       <section id="audit" className="py-32 bg-black">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-8">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-5xl md:text-6xl font-light text-white mb-10">
             Получите бесплатный аудит
           </h2>
-          <p className="text-xl text-gray-300 mb-16 leading-relaxed">
+          <p className="text-2xl text-gray-300 mb-20 leading-relaxed">
             30 минут. Анализ точек роста. Прогноз прибыли.<br />
             Покажем конкретные шаги для увеличения продаж.
           </p>
           
           {/* Graphics Slot */}
-          <div className="mb-16">
-            <div className="bg-gray-900 rounded-xl p-12 border border-gray-800">
+          <div className="mb-20">
+            <div className="bg-gray-900 rounded-2xl p-16 border border-gray-800">
               <div className="text-center text-gray-500">
-                <TrendingUp className="h-16 w-16 mx-auto mb-4 text-gray-600" />
-                <p className="text-sm font-medium text-gray-400">Место для примера аудита</p>
-                <p className="text-xs text-gray-500 mt-1">Скриншот отчёта, диаграммы</p>
+                <TrendingUp className="h-20 w-20 mx-auto mb-6 text-gray-600" />
+                <p className="text-lg font-medium text-gray-400">Место для примера аудита</p>
+                <p className="text-base text-gray-500 mt-2">Скриншот отчёта, диаграммы</p>
               </div>
             </div>
           </div>
           
-          <Card className="max-w-md mx-auto bg-gray-900 border-gray-800">
-            <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+          <Card className="max-w-lg mx-auto bg-gray-900 border-gray-800">
+            <CardContent className="p-10">
+              <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="text-left">
-                  <Label htmlFor="name" className="text-gray-300 font-medium">Имя</Label>
+                  <Label htmlFor="name" className="text-gray-300 font-medium text-lg">Имя</Label>
                   <Input
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Ваше имя"
                     required
-                    className="mt-2 bg-gray-800 border-gray-700 text-white placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+                    className="mt-3 bg-gray-800 border-gray-700 text-white placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 py-4 text-lg"
                   />
                 </div>
                 <div className="text-left">
-                  <Label htmlFor="phone" className="text-gray-300 font-medium">Телефон</Label>
+                  <Label htmlFor="phone" className="text-gray-300 font-medium text-lg">Телефон</Label>
                   <Input
                     id="phone"
                     type="tel"
@@ -491,13 +421,13 @@ const Index = () => {
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+7 (999) 999-99-99"
                     required
-                    className="mt-2 bg-gray-800 border-gray-700 text-white placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+                    className="mt-3 bg-gray-800 border-gray-700 text-white placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 py-4 text-lg"
                   />
                 </div>
-                <Button type="submit" className="w-full bg-white hover:bg-gray-100 text-black py-3 font-medium rounded-md">
+                <Button type="submit" className="w-full bg-white hover:bg-gray-100 text-black py-4 font-medium rounded-lg text-lg">
                   Получить аудит
                 </Button>
-                <p className="text-xs text-gray-500 text-center leading-relaxed">
+                <p className="text-sm text-gray-500 text-center leading-relaxed">
                   Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
               </form>
@@ -507,61 +437,51 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-20">
+      <footer className="bg-black border-t border-gray-800 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-5 gap-8">
+          <div className="grid md:grid-cols-5 gap-10">
             <div className="md:col-span-1">
-              <div className="text-xl font-medium text-white mb-6">Callaba</div>
-              <p className="text-gray-400 leading-relaxed text-sm">
+              <div className="text-2xl font-medium text-white mb-8">Callaba</div>
+              <p className="text-gray-400 leading-relaxed text-base">
                 Ваш внешний отдел по повышению продаж на маркетплейсах
               </p>
             </div>
             
             <div>
-              <h3 className="text-sm font-medium text-gray-300 mb-4 uppercase tracking-wider">PRODUCTS</h3>
-              <ul className="space-y-3 text-gray-500 text-sm">
-                <li><button onClick={() => scrollToSection("hero")} className="hover:text-gray-300 transition-colors">Scale Data Engine</button></li>
-                <li><button onClick={() => scrollToSection("cases")} className="hover:text-gray-300 transition-colors">Scale GenAI Platform</button></li>
-                <li><button onClick={() => scrollToSection("pricing")} className="hover:text-gray-300 transition-colors">Scale Donovan</button></li>
+              <h3 className="text-base font-medium text-gray-300 mb-6 uppercase tracking-wider">МЕНЮ</h3>
+              <ul className="space-y-4 text-gray-500 text-base">
+                <li><button onClick={() => scrollToSection("hero")} className="hover:text-gray-300 transition-colors">Главная</button></li>
+                <li><button onClick={() => scrollToSection("cases")} className="hover:text-gray-300 transition-colors">Кейсы</button></li>
+                <li><button onClick={() => scrollToSection("pricing")} className="hover:text-gray-300 transition-colors">Тарифы</button></li>
+                <li><button onClick={() => scrollToSection("faq")} className="hover:text-gray-300 transition-colors">FAQ</button></li>
+                <li><button onClick={() => scrollToSection("audit")} className="hover:text-gray-300 transition-colors">Аудит</button></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-sm font-medium text-gray-300 mb-4 uppercase tracking-wider">COMPANY</h3>
-              <ul className="space-y-3 text-gray-500 text-sm">
-                <li><button className="hover:text-gray-300 transition-colors">About</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Careers</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Security</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Terms</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Privacy</button></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-sm font-medium text-gray-300 mb-4 uppercase tracking-wider">RESOURCES</h3>
-              <ul className="space-y-3 text-gray-500 text-sm">
-                <li><button className="hover:text-gray-300 transition-colors">Blog</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Contact Us</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Documentation</button></li>
-                <li><button className="hover:text-gray-300 transition-colors">Community</button></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-sm font-medium text-gray-300 mb-4 uppercase tracking-wider">FOLLOW US</h3>
-              <div className="text-gray-500 text-sm">
+              <h3 className="text-base font-medium text-gray-300 mb-6 uppercase tracking-wider">КОНТАКТЫ</h3>
+              <div className="text-gray-500 text-base space-y-3">
                 <p>Телефон: +7 (987) 455-64-71</p>
                 <p>Email: info@callaba.agency</p>
+                <p>WhatsApp: +7 (987) 455-64-71</p>
               </div>
+            </div>
+            
+            <div>
+              <h3 className="text-base font-medium text-gray-300 mb-6 uppercase tracking-wider">ДОКУМЕНТЫ</h3>
+              <ul className="space-y-4 text-gray-500 text-base">
+                <li><button className="hover:text-gray-300 transition-colors">Политика конфиденциальности</button></li>
+                <li><button className="hover:text-gray-300 transition-colors">Пользовательское соглашение</button></li>
+              </ul>
             </div>
           </div>
           
-          <Separator className="my-12 bg-gray-800" />
+          <Separator className="my-16 bg-gray-800" />
           
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm">Copyright © 2025 Scale AI, Inc. All rights reserved.</p>
-            <p className="text-gray-600 text-sm mt-4 md:mt-0">
-              Terms of Use & Privacy Policy
+            <p className="text-gray-500 text-base">Copyright © 2025 Callaba. Все права защищены.</p>
+            <p className="text-gray-600 text-base mt-4 md:mt-0">
+              ИП Иванов И.И. ИНН 123456789012
             </p>
           </div>
         </div>
